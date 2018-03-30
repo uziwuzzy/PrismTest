@@ -71,9 +71,46 @@
                                     <constraint firstItem="8iw-lW-alm" firstAttribute="leading" secondItem="EIv-2X-zEo" secondAttribute="leading" constant="12" id="rDT-Xt-Ia2"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-lG-zLx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-lG-zLx">
                                 <rect key="frame" x="16" y="85" width="343" height="509"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Tha-Ek-XMd" customClass="ChatTableViewCell" customModule="SlackPrismTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tha-Ek-XMd" id="gem-0i-0FI">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1k-Wi-rWp">
+                                                    <rect key="frame" x="15" y="11" width="313" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRm-i7-T0I">
+                                                    <rect key="frame" x="15" y="33.5" width="313" height="100"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="PeG-Xy-tPZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G1k-Wi-rWp" firstAttribute="top" secondItem="gem-0i-0FI" secondAttribute="topMargin" id="4bK-R7-Gnb"/>
+                                                <constraint firstItem="QRm-i7-T0I" firstAttribute="top" secondItem="G1k-Wi-rWp" secondAttribute="bottom" constant="5" id="7i4-ik-kbo"/>
+                                                <constraint firstItem="G1k-Wi-rWp" firstAttribute="trailing" secondItem="gem-0i-0FI" secondAttribute="trailingMargin" id="Bc4-mo-ND8"/>
+                                                <constraint firstItem="G1k-Wi-rWp" firstAttribute="leading" secondItem="gem-0i-0FI" secondAttribute="leadingMargin" id="WaU-kW-p10"/>
+                                                <constraint firstItem="QRm-i7-T0I" firstAttribute="leading" secondItem="gem-0i-0FI" secondAttribute="leadingMargin" id="ZMp-nF-PGW"/>
+                                                <constraint firstItem="QRm-i7-T0I" firstAttribute="trailing" secondItem="gem-0i-0FI" secondAttribute="trailingMargin" id="gyB-UO-kxE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chatLabel" destination="G1k-Wi-rWp" id="WGK-bp-gPZ"/>
+                                            <outlet property="containerView" destination="QRm-i7-T0I" id="rAG-bT-2fk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZk-ZG-P3d">
                                 <rect key="frame" x="16" y="617" width="343" height="40"/>
@@ -107,6 +144,7 @@
                         <viewLayoutGuide key="safeArea" id="oUQ-sI-LPQ"/>
                     </view>
                     <connections>
+                        <outlet property="chatTableView" destination="P3t-lG-zLx" id="AsD-4b-cUw"/>
                         <outlet property="menuButton" destination="8iw-lW-alm" id="zKz-ST-7N9"/>
                     </connections>
                 </viewController>

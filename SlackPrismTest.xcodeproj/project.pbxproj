@@ -10,6 +10,7 @@
 		E908BEBB206DED2D003673EB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBA206DED2D003673EB /* ChatVC.swift */; };
 		E908BEBD206DED46003673EB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBC206DED46003673EB /* ChannelVC.swift */; };
 		E908BEBF206DF147003673EB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBE206DF147003673EB /* GradientView.swift */; };
+		E908BEC1206E0A72003673EB /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEC0206E0A72003673EB /* ChatTableViewCell.swift */; };
 		E986DBFD206DEA8A008A7B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */; };
 		E986DBFF206DEA8A008A7B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986DBFE206DEA8A008A7B49 /* ViewController.swift */; };
 		E986DC02206DEA8A008A7B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E986DC00206DEA8A008A7B49 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		E908BEBA206DED2D003673EB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		E908BEBC206DED46003673EB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		E908BEBE206DF147003673EB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E908BEC0206E0A72003673EB /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		E986DBF9206DEA8A008A7B49 /* SlackPrismTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackPrismTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E986DBFE206DEA8A008A7B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				E908BEBE206DF147003673EB /* GradientView.swift */,
+				E908BEC0206E0A72003673EB /* ChatTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				E986DBFF206DEA8A008A7B49 /* ViewController.swift in Sources */,
 				E908BEBF206DF147003673EB /* GradientView.swift in Sources */,
 				E986DBFD206DEA8A008A7B49 /* AppDelegate.swift in Sources */,
+				E908BEC1206E0A72003673EB /* ChatTableViewCell.swift in Sources */,
 				E986DC12206DEB0D008A7B49 /* SWRevealViewController.m in Sources */,
 				E908BEBD206DED46003673EB /* ChannelVC.swift in Sources */,
 			);
