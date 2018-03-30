@@ -106,4 +106,25 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        var rowHeight : CGFloat = 0
+        let eachMessages = self.dataArray[indexPath.section]["message"]
+        var input = eachMessages as? String
+        let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+        let matches = detector.matches(in: input!, options: [], range: NSRange(location: 0, length: (input?.utf16.count)!))
+        
+        var url : Substring = ""
+        for match in matches {
+            guard let range = Range(match.range, in: input!) else { continue }
+            url = input![range]
+        }
+        //        print(url)
+        if (input?.contains(url))! {
+            rowHeight = 150
+        } else {
+            rowHeight = 44
+        }
+        return rowHeight
+    }
 }
