@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import URLEmbeddedView
+import MisterFusion
+import ActiveLabel
+import SafariServices
 
 class ChatTableViewCell: UITableViewCell {
 
@@ -17,6 +21,14 @@ class ChatTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.backgroundColor = UIColor.white
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 8
+        self.clipsToBounds = true
+        
+//        containerView.isHidden = true
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
