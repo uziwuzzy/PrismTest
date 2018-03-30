@@ -18,6 +18,8 @@ class ChatTableViewCell: UITableViewCell {
     
     @IBOutlet weak var containerView: UIView!
     
+    let embeddedView = URLEmbeddedView()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,6 +30,15 @@ class ChatTableViewCell: UITableViewCell {
         self.clipsToBounds = true
         
 //        containerView.isHidden = true
+        self.chatLabel.URLColor = UIColor(red: 51/255, green: 102/255, blue: 187/255, alpha: 1)
+        self.chatLabel.URLSelectedColor = .lightGray
+        
+        containerView.addLayoutSubview(embeddedView, andConstraints:
+            embeddedView.top |+| 20,
+                                       embeddedView.right |-| 0,
+                                       embeddedView.left |+| 0,
+                                       embeddedView.bottom |-| 0
+        )
 
     }
 
