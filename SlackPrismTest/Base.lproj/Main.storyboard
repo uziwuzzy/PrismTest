@@ -71,12 +71,38 @@
                                     <constraint firstItem="8iw-lW-alm" firstAttribute="leading" secondItem="EIv-2X-zEo" secondAttribute="leading" constant="12" id="rDT-Xt-Ia2"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-lG-zLx">
+                                <rect key="frame" x="16" y="85" width="343" height="509"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZk-ZG-P3d">
+                                <rect key="frame" x="16" y="617" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="y40-uU-Yk4"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMK-hf-eL2">
+                                <rect key="frame" x="321" y="622" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="NZk-ZG-P3d" firstAttribute="top" secondItem="P3t-lG-zLx" secondAttribute="bottom" constant="23" id="4nt-mR-TgT"/>
+                            <constraint firstItem="oUQ-sI-LPQ" firstAttribute="trailing" secondItem="DMK-hf-eL2" secondAttribute="trailing" constant="24" id="BKC-nX-Srv"/>
                             <constraint firstItem="EIv-2X-zEo" firstAttribute="top" secondItem="nDd-9I-5Xw" secondAttribute="top" id="Mfi-qf-lGy"/>
+                            <constraint firstItem="NZk-ZG-P3d" firstAttribute="leading" secondItem="oUQ-sI-LPQ" secondAttribute="leading" constant="16" id="NY2-DT-J5b"/>
+                            <constraint firstItem="P3t-lG-zLx" firstAttribute="leading" secondItem="oUQ-sI-LPQ" secondAttribute="leading" constant="16" id="U21-HK-RkX"/>
+                            <constraint firstItem="oUQ-sI-LPQ" firstAttribute="trailing" secondItem="P3t-lG-zLx" secondAttribute="trailing" constant="16" id="Wxu-Kp-I05"/>
                             <constraint firstItem="EIv-2X-zEo" firstAttribute="leading" secondItem="oUQ-sI-LPQ" secondAttribute="leading" id="c1a-Yx-g05"/>
                             <constraint firstItem="EIv-2X-zEo" firstAttribute="trailing" secondItem="oUQ-sI-LPQ" secondAttribute="trailing" id="cuf-0E-GHS"/>
+                            <constraint firstItem="oUQ-sI-LPQ" firstAttribute="bottom" secondItem="NZk-ZG-P3d" secondAttribute="bottom" constant="10" id="lkw-Em-exD"/>
+                            <constraint firstItem="P3t-lG-zLx" firstAttribute="top" secondItem="EIv-2X-zEo" secondAttribute="bottom" constant="8" id="oFj-by-vJg"/>
+                            <constraint firstItem="DMK-hf-eL2" firstAttribute="centerY" secondItem="NZk-ZG-P3d" secondAttribute="centerY" id="sxV-EU-Hj3"/>
+                            <constraint firstItem="oUQ-sI-LPQ" firstAttribute="trailing" secondItem="NZk-ZG-P3d" secondAttribute="trailing" constant="16" id="yI7-qZ-WiV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oUQ-sI-LPQ"/>
                     </view>
@@ -164,6 +190,7 @@
     </scenes>
     <resources>
         <image name="addChannelButton" width="22" height="22"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
