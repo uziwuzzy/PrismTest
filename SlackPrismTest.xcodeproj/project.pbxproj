@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E908BEBB206DED2D003673EB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBA206DED2D003673EB /* ChatVC.swift */; };
+		E908BEBD206DED46003673EB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBC206DED46003673EB /* ChannelVC.swift */; };
+		E908BEBF206DF147003673EB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBE206DF147003673EB /* GradientView.swift */; };
+		E986DBFD206DEA8A008A7B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */; };
+		E986DBFF206DEA8A008A7B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986DBFE206DEA8A008A7B49 /* ViewController.swift */; };
+		E986DC02206DEA8A008A7B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E986DC00206DEA8A008A7B49 /* Main.storyboard */; };
+		E986DC04206DEA8A008A7B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E986DC03206DEA8A008A7B49 /* Assets.xcassets */; };
+		E986DC07206DEA8A008A7B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E986DC05206DEA8A008A7B49 /* LaunchScreen.storyboard */; };
+		E986DC12206DEB0D008A7B49 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E986DC11206DEB0D008A7B49 /* SWRevealViewController.m */; };
+		F1363FCE2E880612A5E2BC5C /* Pods_SlackPrismTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D512BD636C9E5E7C203C068 /* Pods_SlackPrismTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D512BD636C9E5E7C203C068 /* Pods_SlackPrismTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackPrismTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E57AF04F3C0C4CEABE8506 /* Pods-SlackPrismTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackPrismTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackPrismTest/Pods-SlackPrismTest.release.xcconfig"; sourceTree = "<group>"; };
+		380CB8278062EAFBF0E7316D /* Pods-SlackPrismTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackPrismTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackPrismTest/Pods-SlackPrismTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E908BEBA206DED2D003673EB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		E908BEBC206DED46003673EB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		E908BEBE206DF147003673EB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E986DBF9206DEA8A008A7B49 /* SlackPrismTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackPrismTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E986DBFE206DEA8A008A7B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E986DC01206DEA8A008A7B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E986DC03206DEA8A008A7B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E986DC06206DEA8A008A7B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E986DC08206DEA8A008A7B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E986DC0F206DEB0C008A7B49 /* SlackPrismTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlackPrismTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		E986DC10206DEB0D008A7B49 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E986DC11206DEB0D008A7B49 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E986DBF6206DEA8A008A7B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1363FCE2E880612A5E2BC5C /* Pods_SlackPrismTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		398905C27E83BB5CCABB3C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				380CB8278062EAFBF0E7316D /* Pods-SlackPrismTest.debug.xcconfig */,
+				32E57AF04F3C0C4CEABE8506 /* Pods-SlackPrismTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A129358A5D5E29746C0FA884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D512BD636C9E5E7C203C068 /* Pods_SlackPrismTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E908BEB8206DED07003673EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E908BEBA206DED2D003673EB /* ChatVC.swift */,
+				E908BEBC206DED46003673EB /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E908BEB9206DED0E003673EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E908BEBE206DF147003673EB /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E986DBF0206DEA8A008A7B49 = {
+			isa = PBXGroup;
+			children = (
+				E986DBFB206DEA8A008A7B49 /* SlackPrismTest */,
+				E986DBFA206DEA8A008A7B49 /* Products */,
+				398905C27E83BB5CCABB3C4C /* Pods */,
+				A129358A5D5E29746C0FA884 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E986DBFA206DEA8A008A7B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E986DBF9206DEA8A008A7B49 /* SlackPrismTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E986DBFB206DEA8A008A7B49 /* SlackPrismTest */ = {
+			isa = PBXGroup;
+			children = (
+				E908BEB9206DED0E003673EB /* View */,
+				E908BEB8206DED07003673EB /* Controller */,
+				E986DC0E206DEAEB008A7B49 /* Supporting Files */,
+				E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */,
+				E986DBFE206DEA8A008A7B49 /* ViewController.swift */,
+				E986DC00206DEA8A008A7B49 /* Main.storyboard */,
+				E986DC03206DEA8A008A7B49 /* Assets.xcassets */,
+				E986DC05206DEA8A008A7B49 /* LaunchScreen.storyboard */,
+				E986DC08206DEA8A008A7B49 /* Info.plist */,
+			);
+			path = SlackPrismTest;
+			sourceTree = "<group>";
+		};
+		E986DC0E206DEAEB008A7B49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E986DC10206DEB0D008A7B49 /* SWRevealViewController.h */,
+				E986DC11206DEB0D008A7B49 /* SWRevealViewController.m */,
+				E986DC0F206DEB0C008A7B49 /* SlackPrismTest-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E986DBF8206DEA8A008A7B49 /* SlackPrismTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E986DC0B206DEA8A008A7B49 /* Build configuration list for PBXNativeTarget "SlackPrismTest" */;
+			buildPhases = (
+				74BA75FEB0C18CE3DCF35A16 /* [CP] Check Pods Manifest.lock */,
+				E986DBF5206DEA8A008A7B49 /* Sources */,
+				E986DBF6206DEA8A008A7B49 /* Frameworks */,
+				E986DBF7206DEA8A008A7B49 /* Resources */,
+				19451E0E675A27C8BF140BDF /* [CP] Embed Pods Frameworks */,
+				D45B19207AABC21F7E13FEE6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlackPrismTest;
+			productName = SlackPrismTest;
+			productReference = E986DBF9206DEA8A008A7B49 /* SlackPrismTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E986DBF1206DEA8A008A7B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Muhammad Fauzi Masykur";
+				TargetAttributes = {
+					E986DBF8206DEA8A008A7B49 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E986DBF4206DEA8A008A7B49 /* Build configuration list for PBXProject "SlackPrismTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E986DBF0206DEA8A008A7B49;
+			productRefGroup = E986DBFA206DEA8A008A7B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E986DBF8206DEA8A008A7B49 /* SlackPrismTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E986DBF7206DEA8A008A7B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E986DC07206DEA8A008A7B49 /* LaunchScreen.storyboard in Resources */,
+				E986DC04206DEA8A008A7B49 /* Assets.xcassets in Resources */,
+				E986DC02206DEA8A008A7B49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19451E0E675A27C8BF140BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlackPrismTest/Pods-SlackPrismTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MisterFusion/MisterFusion.framework",
+				"${BUILT_PRODUCTS_DIR}/NoticeObserveKit/NoticeObserveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/URLEmbeddedView/URLEmbeddedView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActiveLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MisterFusion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NoticeObserveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URLEmbeddedView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackPrismTest/Pods-SlackPrismTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74BA75FEB0C18CE3DCF35A16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlackPrismTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45B19207AABC21F7E13FEE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackPrismTest/Pods-SlackPrismTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E986DBF5206DEA8A008A7B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E908BEBB206DED2D003673EB /* ChatVC.swift in Sources */,
+				E986DBFF206DEA8A008A7B49 /* ViewController.swift in Sources */,
+				E908BEBF206DF147003673EB /* GradientView.swift in Sources */,
+				E986DBFD206DEA8A008A7B49 /* AppDelegate.swift in Sources */,
+				E986DC12206DEB0D008A7B49 /* SWRevealViewController.m in Sources */,
+				E908BEBD206DED46003673EB /* ChannelVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E986DC00206DEA8A008A7B49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E986DC01206DEA8A008A7B49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E986DC05206DEA8A008A7B49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E986DC06206DEA8A008A7B49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E986DC09206DEA8A008A7B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E986DC0A206DEA8A008A7B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E986DC0C206DEA8A008A7B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380CB8278062EAFBF0E7316D /* Pods-SlackPrismTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A566REV8NE;
+				INFOPLIST_FILE = SlackPrismTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzisme.SlackPrismTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlackPrismTest/Supporting Files/SlackPrismTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E986DC0D206DEA8A008A7B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E57AF04F3C0C4CEABE8506 /* Pods-SlackPrismTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A566REV8NE;
+				INFOPLIST_FILE = SlackPrismTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzisme.SlackPrismTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlackPrismTest/Supporting Files/SlackPrismTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E986DBF4206DEA8A008A7B49 /* Build configuration list for PBXProject "SlackPrismTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E986DC09206DEA8A008A7B49 /* Debug */,
+				E986DC0A206DEA8A008A7B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E986DC0B206DEA8A008A7B49 /* Build configuration list for PBXNativeTarget "SlackPrismTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E986DC0C206DEA8A008A7B49 /* Debug */,
+				E986DC0D206DEA8A008A7B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E986DBF1206DEA8A008A7B49 /* Project object */;
+}
