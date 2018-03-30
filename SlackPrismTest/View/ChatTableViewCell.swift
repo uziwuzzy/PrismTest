@@ -32,6 +32,7 @@ class ChatTableViewCell: UITableViewCell {
         containerView.isHidden = true
         self.chatLabel.URLColor = UIColor(red: 51/255, green: 102/255, blue: 187/255, alpha: 1)
         self.chatLabel.URLSelectedColor = .lightGray
+        self.chatLabel.numberOfLines = 0
         
         containerView.addLayoutSubview(embeddedView, andConstraints:
             embeddedView.top |+| 20,
