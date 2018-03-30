@@ -29,7 +29,7 @@ class ChatTableViewCell: UITableViewCell {
         self.layer.cornerRadius = 8
         self.clipsToBounds = true
         
-//        containerView.isHidden = true
+        containerView.isHidden = true
         self.chatLabel.URLColor = UIColor(red: 51/255, green: 102/255, blue: 187/255, alpha: 1)
         self.chatLabel.URLSelectedColor = .lightGray
         

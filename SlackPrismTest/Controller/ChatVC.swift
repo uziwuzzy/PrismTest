@@ -69,7 +69,41 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             cell.selectionStyle = .none
             cell.chatLabel.text = eachMessages as? String
+            
+            cell.chatLabel.handleURLTap { url in if #available(iOS 10.0, *) {
+                self.present(SFSafariViewController(url: url), animated: true, completion: nil)            } else {
+                // Fallback on earlier versions
+                cell.chatLabel.handleURLTap { url in UIApplication.shared.openURL(url) }
+                }}
+            
+            var input = eachMessages as? String
+            let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+            let matches = detector.matches(in: input!, options: [], range: NSRange(location: 0, length: (input?.utf16.count)!))
+            
+            for match in matches {
+                guard let range = Range(match.range, in: input!) else { continue }
+                let url = input![range]
+                //                print(input!)
+                cell.embeddedView.textProvider[.title].font = .boldSystemFont(ofSize: 8)
+                cell.embeddedView.textProvider[.title].fontColor = .lightGray
+                cell.embeddedView.textProvider[.title].numberOfLines = 1
+                cell.embeddedView.textProvider[.description].numberOfLines = 2
+                cell.embeddedView.textProvider[.description].font = .systemFont(ofSize: 10.0)
+                cell.embeddedView.loadURL(String(url))
+                cell.embeddedView.didTapHandler = { [weak self] embeddedView, URL in
+                    guard let URL = URL else { return }
+                    self?.present(SFSafariViewController(url: URL), animated: true, completion: nil)
+                }
+                
+                if (input?.contains(url))! {
+                    cell.containerView.isHidden = false
+                } else {
+                    cell.containerView.isHidden = true
+                }
+                
             }
+            
+        }
         return cell
     }
 }
