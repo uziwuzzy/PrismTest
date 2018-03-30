@@ -1,8 +1,10 @@
 # PrismTest
 a test of ios development
 
+    To run this app, go to folder, and do pod install.
+
 The thought process of building this app contains 2 phase: the brainstorming phase and execution phase. Firstly, I try to breakdown the steps and problems:
-I am not using full MVC because the model is simple, so i put the model in the controller. However, the view is located seperatly.
+I am not using full MVC because the data I used is only "message", so I put the model in the controller. However, the view is located seperatly.
 1. Brainstorming phase:
     1. the User Interface(choosing Slack as inspiration)
         - plan to use storyboard for rapid prototyping
