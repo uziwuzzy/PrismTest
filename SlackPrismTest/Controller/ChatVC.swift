@@ -86,8 +86,8 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 //                print(input!)
                 cell.embeddedView.textProvider[.title].font = .boldSystemFont(ofSize: 8)
                 cell.embeddedView.textProvider[.title].fontColor = .lightGray
-                cell.embeddedView.textProvider[.title].numberOfLines = 1
-                cell.embeddedView.textProvider[.description].numberOfLines = 2
+                cell.embeddedView.textProvider[.title].numberOfLines = 0
+                cell.embeddedView.textProvider[.description].numberOfLines = 0
                 cell.embeddedView.textProvider[.description].font = .systemFont(ofSize: 10.0)
                 cell.embeddedView.loadURL(String(url))
                 cell.embeddedView.didTapHandler = { [weak self] embeddedView, URL in
