@@ -14,7 +14,7 @@ import SafariServices
 
 class ChatTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var chatLabel: UILabel!
+    @IBOutlet weak var chatLabel: ActiveLabel!
     
     @IBOutlet weak var containerView: UIView!
     
