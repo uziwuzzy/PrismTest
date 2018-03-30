@@ -1,7 +1,8 @@
 # PrismTest
 a test of ios development
-
-    To run this app, go to folder, and do pod install.
+    
+    xcode 9.2 swift 4
+    To run this app, go to folder, and do pod install. Then open xcworkspace.
 
 The thought process of building this app contains 2 phase: the brainstorming phase and execution phase. Firstly, I try to breakdown the steps and problems:
 I am not using full MVC because the data I used is only "message", so I put the model in the controller. However, the view is located seperatly.
