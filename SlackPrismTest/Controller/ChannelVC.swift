@@ -8,11 +8,11 @@
 
 import UIKit
 
+//used as a rearView of the hamburger Menu
 class ChannelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.revealViewController().rearViewRevealWidth
     }
 }

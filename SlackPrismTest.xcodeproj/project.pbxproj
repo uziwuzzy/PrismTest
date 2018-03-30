@@ -12,7 +12,6 @@
 		E908BEBF206DF147003673EB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEBE206DF147003673EB /* GradientView.swift */; };
 		E908BEC1206E0A72003673EB /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908BEC0206E0A72003673EB /* ChatTableViewCell.swift */; };
 		E986DBFD206DEA8A008A7B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */; };
-		E986DBFF206DEA8A008A7B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986DBFE206DEA8A008A7B49 /* ViewController.swift */; };
 		E986DC02206DEA8A008A7B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E986DC00206DEA8A008A7B49 /* Main.storyboard */; };
 		E986DC04206DEA8A008A7B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E986DC03206DEA8A008A7B49 /* Assets.xcassets */; };
 		E986DC07206DEA8A008A7B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E986DC05206DEA8A008A7B49 /* LaunchScreen.storyboard */; };
@@ -30,7 +29,6 @@
 		E908BEC0206E0A72003673EB /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		E986DBF9206DEA8A008A7B49 /* SlackPrismTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackPrismTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E986DBFE206DEA8A008A7B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E986DC01206DEA8A008A7B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E986DC03206DEA8A008A7B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E986DC06206DEA8A008A7B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				E908BEB8206DED07003673EB /* Controller */,
 				E986DC0E206DEAEB008A7B49 /* Supporting Files */,
 				E986DBFC206DEA8A008A7B49 /* AppDelegate.swift */,
-				E986DBFE206DEA8A008A7B49 /* ViewController.swift */,
 				E986DC00206DEA8A008A7B49 /* Main.storyboard */,
 				E986DC03206DEA8A008A7B49 /* Assets.xcassets */,
 				E986DC05206DEA8A008A7B49 /* LaunchScreen.storyboard */,
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E908BEBB206DED2D003673EB /* ChatVC.swift in Sources */,
-				E986DBFF206DEA8A008A7B49 /* ViewController.swift in Sources */,
 				E908BEBF206DF147003673EB /* GradientView.swift in Sources */,
 				E986DBFD206DEA8A008A7B49 /* AppDelegate.swift in Sources */,
 				E908BEC1206E0A72003673EB /* ChatTableViewCell.swift in Sources */,
